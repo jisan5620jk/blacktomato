@@ -1,0 +1,15 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "Black To Mato - IT Solution Next JS Template",
+  description:
+    "Black To Mato - IT Solution Next JS Template is a sleek, responsive, and customizable template for tech businesses and startups. Perfect for showcasing services and projects. Get started today!",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}

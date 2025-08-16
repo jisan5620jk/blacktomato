@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*Common Tailwind CSS Start Here*/
+
+.Container {
+  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1369px] px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Brandon Grotesque;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../public/fonts/brandon-regular-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Brandon Grotesque;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../public/fonts/brandon-bold-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Brandon Grotesque;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../public/fonts/brandon-medium-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: AlternateGotNo1D;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../public/fonts/AlternateGotNo1DRegular.woff2) format("truetype");
+}
+
