@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import TestimonialCard from "./TestimonialCard";
 import { RiDoubleQuotesL } from "react-icons/ri";
-import "./testimonial.css";
 import Image from "next/image";
+import "./testimonial.css";
 
 const testiData = [
   {
@@ -91,7 +91,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="testimonial pt-[58px] bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
+    <section className="testimonial pt-[58px] pb-12 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="mt-[46px] relative z-10">
           {/* Swiper with default bullet pagination */}
