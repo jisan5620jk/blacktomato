@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="bg-[url('/images/about-bg.avif')] bg-cover bg-center bg-no-repeat pt-[76px] pb-12">
+    <section className="bg-[url('/images/about-bg.avif')] bg-cover bg-center bg-no-repeat pt-[76px] pb-12" id="about">
       <div className="Container">
         <div className="text-center">
           <h3 className="font-Brandon text-lg font-bold text-black uppercase tracking-[1.8px]">

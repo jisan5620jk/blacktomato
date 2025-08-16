@@ -33,7 +33,7 @@ const Banner = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-50">
         <div className="relative pb-12">
           <a
-            href="#"
+            href="#about"
             className="font-Brandon text-white text-sm font-semibold uppercase"
           >
             Scroll
