@@ -37,6 +37,11 @@ module.exports = {
         // 1400-1600, 1300-1399,1200-1299,992-1199(1170),768-991,600-767,480-599,320-479
       },
       keyframes: {
+        scroll: {
+          "0%": { transform: "translateY(-100%)" },
+          "25%, 50%, 75%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(100%)" },
+        },
         movebtn: {
           "0%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(20px)" },
@@ -103,6 +108,7 @@ module.exports = {
         },
       },
       animation: {
+        scroll: "scroll 3s 0.5s infinite",
         movebtn: "movebtn 3s linear infinite",
         wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",

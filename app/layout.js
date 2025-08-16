@@ -1,9 +1,10 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Black To Mato - IT Solution Next JS Template",
+  title:
+    "Luxury Travel, High End Tours &amp; Tailor Made Holidays | Black Tomato",
   description:
-    "Black To Mato - IT Solution Next JS Template is a sleek, responsive, and customizable template for tech businesses and startups. Perfect for showcasing services and projects. Get started today!",
+    "Luxury Travel, High End Tours &amp; Tailor Made Holidays | Black TomatoBlack Tomato: bespoke luxury travel and high-end, tailor-made holidays for adventurous, discerning travelers.",
 };
 
 export default function RootLayout({ children }) {
