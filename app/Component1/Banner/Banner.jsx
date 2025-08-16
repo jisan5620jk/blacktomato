@@ -16,7 +16,7 @@ const Banner = () => {
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 text-center">
-        <h2 className="font-Alternate text-white text-[60px] leading-[54px] font-normal text-center uppercase">
+        <h2 className="font-Alternate text-white text-[60px] leading-[54px] tracking-[3px] font-normal text-center uppercase">
           Put The World
           <br />
           In Your Hands
