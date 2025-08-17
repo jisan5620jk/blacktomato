@@ -23,7 +23,7 @@ const About = () => {
           <div className="mt-[24px]">
             <Link
               href={"/"}
-              className="font-Brandon text-xs tracking-[1.2px] bg-black border border-black rounded px-5 py-2.5 text-white uppercase transition-all duration-500 hover:bg-white hover:text-black"
+              className="font-Brandon text-xs tracking-[1.2px] font-medium bg-black border border-black rounded px-5 py-2.5 text-white uppercase transition-all duration-500 hover:bg-white hover:text-black"
             >
               Get In Touch
             </Link>

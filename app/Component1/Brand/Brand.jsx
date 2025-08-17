@@ -1,75 +1,26 @@
-"use client"
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import brandThumb from "../../../public/images/brand-1.png";
-import brandThumb2 from "../../../public/images/brand-2.png";
-import brandThumb3 from "../../../public/images/brand-3.png";
-import brandThumb4 from "../../../public/images/brand-4.png";
-import brandThumb5 from "../../../public/images/brand-5.png";
-import Image from "next/image";
+const brandData = [
+  { id: 1, img: "/images/kVZ1z4VT-travelleisure.svg", alt: "Brand 1" },
+  { id: 2, img: "/images/vsDPx9UG-virtuoso-member.svg", alt: "Brand 2" },
+  { id: 3, img: "/images/8rpGkBLO-conde-nast-traveler.svg", alt: "Brand 3" },
+  { id: 4, img: "/images/veWhg0JB-iata.svg", alt: "Brand 4" },
+  { id: 5, img: "/images/abta-logo.svg", alt: "Brand 5" },
+];
 
 const Brand = () => {
-  const settings = {
-    loop: true,
-    spaceBetween: 30,
-    speed: 1000,
-    autoplay: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 4,
-      },
-      1400: {
-        slidesPerView: 5,
-      },
-    },
-  };
   return (
-    <div className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-[120px] pb-28">
-      <div className="Container relative z-10">
-        <Swiper {...settings}>
-          <SwiperSlide>
-            <div>
-              <Image src={brandThumb} draggable="false" alt="Brand Image"className="m-auto" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image src={brandThumb2} draggable="false" alt="Brand Image"className="m-auto" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image src={brandThumb3} draggable="false" alt="Brand Image"className="m-auto" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image src={brandThumb4} draggable="false" alt="Brand Image"className="m-auto" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image src={brandThumb5} draggable="false" alt="Brand Image"className="m-auto" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image src={brandThumb} draggable="false" alt="Brand Image"className="m-auto" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+    <section className="bg-DarkBg-0 py-[25.5px]">
+      <div className="Container">
+        <ul className="flex flex-wrap items-center justify-center">
+          {brandData.map((brand) => (
+            <li key={brand.id} className="px-[40.8px]">
+              <picture>
+                <img src={brand.img} alt={brand.alt} />
+              </picture>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

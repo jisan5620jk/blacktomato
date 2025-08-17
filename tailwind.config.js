@@ -26,6 +26,7 @@ module.exports = {
         BodyBg: ["#f9f9f9"],
         DarkBg: ["#1c1c1c"],
         hoverBg: ["#444"],
+        borderColor: ["#e5dfcc"],
       },
       screens: {
         sm: "576px",
