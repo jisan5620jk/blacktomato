@@ -7,6 +7,7 @@ import "./our-trip.css";
 
 const ourTripData = [
   {
+    cardUrl: "/",
     imageUrl: "/images/Selous-game-drive.avif",
     duration: "8 NIGHTS",
     title: "Selous to Zanzibar: Escape the Crowds in Tanzania",
@@ -16,6 +17,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Bordeaux-in-France.avif",
     duration: "10 NIGHTS",
     title: "Highlights of France: Classic Charm & Gourmet Indulgence",
@@ -24,6 +26,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Highlights-of-Italy-scaled.avif",
     duration: "9 NIGHTS",
     title: "Highlights of Italy: A Luxury Holiday in Rome, Florence & Venice",
@@ -33,6 +36,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Family-island-hopping-scaled.avif",
     duration: "11 NIGHTS",
     title: "Athens, Mykonos and Crete: A Luxury Family Discovery in Greece",
@@ -42,6 +46,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Northern-Lights-Iceland-scaled.avif",
     duration: "5 NIGHTS",
     title: "Iceland: A Luxury Trip Chasing the Northern Lights",
@@ -51,6 +56,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Ninja-martial-arts-in-Tokyo.avif",
     duration: "10 NIGHTS",
     title: "Tokyo & Kyoto: A Japan Family Holiday",
@@ -60,6 +66,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/rLPwBc1M-Egypt.avif",
     duration: "6 NIGHTS",
     title: "Ultimate Egypt: Culture on the Nile",
@@ -68,6 +75,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Atlas-mountains-morocco-landscape.avif",
     duration: "7 NIGHTS",
     title: "A Journey into Morocco",
@@ -76,6 +84,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/Borana-Lodge-Location-Setting-Pride-Rock.avif",
     duration: "8 NIGHTS",
     title: "Kenya: The Ultimate Family Safari",
@@ -85,6 +94,7 @@ const ourTripData = [
     buttonText: "Explore Trip",
   },
   {
+    cardUrl: "/",
     imageUrl: "/images/3OxkpiGQ-FeeKbyBI-freepik__upload__60443-resized.jpg",
     duration: "Custom trips",
     title: "Create Your Own Itinerary",
@@ -147,7 +157,7 @@ const OurTrip = () => {
               <h2 className="font-medium font-Alternate text-[45px] text-white tracking-[2.25px] uppercase">
                 Explore our trips
               </h2>
-              <p className="font-Brandon text-[17px] font-medium italic text-white tracking-[0.85px] w-full max-w-[250px]">
+              <p className="font-Brandon text-[17px] italic text-white tracking-[0.85px] w-full max-w-[255px]">
                 Remarkable experiences to inspire the mind
               </p>
             </div>
@@ -156,10 +166,10 @@ const OurTrip = () => {
                 {ourTripData.map((ourTrip, index) => (
                   <OurTripCard key={index} {...ourTrip} />
                 ))}
-                <div>
+                <div className="mt-1">
                   <Link
                     href={"/"}
-                    className="font-Brandon text-xs tracking-[1.2px] border border-white rounded px-5 py-2.5 text-white uppercase transition-all duration-500 hover:bg-[#444]"
+                    className="font-Brandon text-xs tracking-[1.2px] border border-white rounded px-5 py-2.5 text-white uppercase transition-all duration-500 hover:bg-hoverBg-0"
                   >
                     View All
                   </Link>

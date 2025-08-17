@@ -1,27 +1,47 @@
-
-
-const OurTripCard = ({ imageUrl, duration, title, description, buttonText }) => {
+const OurTripCard = ({
+  cardUrl,
+  imageUrl,
+  duration,
+  title,
+  description,
+  price,
+  buttonText,
+}) => {
   return (
-    <div className="our-trip-box relative overflow-hidden group">
+    <div className="our-trip-box relative z-10 cursor-pointer overflow-hidden group before:absolute before:size-full before:inset-0 before:bg-gradient-to-t before:to-transparent before:from-black/70 before:opacity-50 before:z-20 before:transition-all before:duration-500 hover:before:opacity-100">
       {/* Image */}
-      <picture>
-        <img src={imageUrl} alt={title} className="w-full h-full object-cover" />
+      <picture className="relative z-10">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
       </picture>
 
       {/* Static content */}
-      <div className="px-6 py-4">
-        <h3 className="text-sm font-semibold text-gray-500 uppercase">{duration}</h3>
-      </div>
+      <h3 className="absolute z-30 right-6 top-6 font-Brandon text-xs font-bold text-white [text-shadow:1px_1px_1px_rgba(0,_0,_0,_.6)] uppercase">
+        {duration}
+      </h3>
 
       {/* Hover overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white px-6">
-        <h2 className="text-xl font-bold mb-2 transform transition-all duration-300 group-hover:-translate-y-4 text-center">
+      <div className="absolute z-30 left-0 bottom-6 text-left text-white px-[25.5px]">
+        <h2 className="font-Brandon font-bold tracking-[1.5px] uppercase mb-1.5">
           {title}
         </h2>
-        <p className="text-sm text-center mb-4">{description}</p>
-        <button className="bg-white text-black text-sm font-semibold px-4 py-2 rounded hover:bg-gray-200 transition">
+        <div className="max-h-0 transition-all duration-500 group-hover:max-h-[200px] overflow-hidden">
+          <p className="font-Brandon text-[17px] tracking-[0.85px] leading-5 mb-1.5">
+            {description}
+          </p>
+          <p className="font-Brandon text-sm tracking-[0.85px] italic pb-1">
+            {price}
+          </p>
+        </div>
+        <a
+          href={cardUrl}
+          className="inline-block font-Brandon font-medium text-xs tracking-[1.2px] border border-white rounded px-5 py-2.5 text-white uppercase transition-all duration-500 hover:bg-hoverBg-0 mt-2.5"
+        >
           {buttonText}
-        </button>
+        </a>
       </div>
     </div>
   );
