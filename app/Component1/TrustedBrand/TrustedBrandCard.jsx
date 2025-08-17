@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const TrustedBrandCard = ({ testiDesc, brandLogo }) => {
   return (
     <div className="relative text-center mx-[25.5px]">
@@ -7,12 +5,11 @@ const TrustedBrandCard = ({ testiDesc, brandLogo }) => {
         {testiDesc}
       </p>
 
-      <div>
+      <div className="flex justify-center items-center">
         <picture>
           <img
             src={brandLogo} // Public folder path or remote URL
             alt="Trusted Brand"
-            priority={true}
           />
         </picture>
       </div>

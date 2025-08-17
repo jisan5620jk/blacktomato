@@ -8,7 +8,7 @@ const ContactCard = ({ contactIcon, contactSubTitle, contactTitle }) => {
         <h6 className="font-Rajdhani font-semibold text-lg text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {contactSubTitle}
         </h6>
-        <h4 className="font-Rajdhani font-semibold text-xl sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-[26px] text-PrimaryColor-0 transition-all duration-500 group-hover:text-white mt-[2px]">
+        <h4 className="font-Rajdhani font-semibold text-xl sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-[25.5px] text-PrimaryColor-0 transition-all duration-500 group-hover:text-white mt-[2px]">
           {contactTitle}
         </h4>
       </div>

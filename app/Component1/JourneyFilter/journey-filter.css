@@ -1,7 +1,24 @@
-.travel-box {
+.travel-box,
+.popular-box,
+.spot-light-box {
   min-height: 600px;
 }
-
+.month-box {
+  min-height: 287px;
+}
 
 @media screen and (max-width: 1024px) {
+}
+
+.journey-filter .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, auto);
+  top: var(--swiper-pagination-top, 6px);
+}
+
+.journey-filter  .swiper-pagination-bullet {
+  height: 11px;
+  width: 11px;
 }

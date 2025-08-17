@@ -65,14 +65,14 @@ const Testimonial = () => {
     modules: [Autoplay, Pagination],
     loop: true,
     speed: 3000,
-    slidesPerView: 4, // ekhon ek sathe koyta slide dekhabe
-    slidesPerGroup: 4, // ek sathe koyta slide move korbe
+    slidesPerView: 4,
+    slidesPerGroup: 4,
     autoplay: {
       delay: 10000,
       disableOnInteraction: false,
     },
     pagination: {
-      clickable: true, // default dot pagination
+      clickable: true,
     },
     breakpoints: {
       0: {
@@ -91,7 +91,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="testimonial pt-[58px] pb-12 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
+    <section className="testimonial pt-[58px] pb-[90px] bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
       <div className="Container">
         <div className="mt-[46px] relative z-10">
           {/* Swiper with default bullet pagination */}

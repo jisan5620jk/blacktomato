@@ -21,12 +21,12 @@ const ServiceCard = ({
         />
       </div>
       <div className="absolute top-8 right-0">
-        <h5 className="font-Rajdhani font-semibold text-[26px] w-[70px] h-[50px] pr-5 flex items-center rounded-l-full justify-end text-PrimaryColor-0 bg-[#e6eefb] transition-all duration-500 group-hover:text-white group-hover:bg-SecondaryColor-0">
+        <h5 className="font-Rajdhani font-semibold text-[25.5px] w-[70px] h-[50px] pr-5 flex items-center rounded-l-full justify-end text-PrimaryColor-0 bg-[#e6eefb] transition-all duration-500 group-hover:text-white group-hover:bg-SecondaryColor-0">
           {serviceNumber}
         </h5>
       </div>
       <Link href={serviceUrl}>
-        <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
+        <button className="font-Rajdhani font-bold text-[22px] sm:text-[25.5px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
           {serviceTitle}
         </button>
       </Link>

@@ -142,7 +142,7 @@ const Footer5 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[26px]">
+            <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[25.5px]">
               Newsletter
             </h4>
             <p className="font-Nunito text-TextColor-0 font-medium mb-5">

@@ -23,7 +23,7 @@ module.exports = {
         HeadingColor: ["#000000"],
         TextColor: ["#52575c"],
         DarkText: ["#adadad"],
-        BodyBg: ["#f3f7fd"],
+        BodyBg: ["#f9f9f9"],
         DarkBg: ["#1c1c1c"],
       },
       screens: {

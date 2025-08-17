@@ -117,7 +117,7 @@ const Pricing = () => {
                   <h5 className="pricing-title font-Rajdhani font-semibold mt-2 sm:mt-2 text-2xl sm:text-[28px] text-HeadingColor-0 transition-all duration-500 mb-1">
                     19 Days For Free
                   </h5>
-                  <p className="pricing-desc font-Nunito text-TextColor2-0 transition-all duration-500 mb-[26px]">
+                  <p className="pricing-desc font-Nunito text-TextColor2-0 transition-all duration-500 mb-[25.5px]">
                     Multifunctional human capital after awesome{" "}
                     <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                     superior scenarios my coordinate
@@ -157,7 +157,7 @@ const Pricing = () => {
                   <h5 className="pricing-title font-Rajdhani font-semibold mt-2 sm:mt-2 text-2xl sm:text-[28px] text-HeadingColor-0 transition-all duration-500 mb-1">
                     09 Days For Free
                   </h5>
-                  <p className="pricing-desc font-Nunito text-TextColor2-0 transition-all duration-500 mb-[26px]">
+                  <p className="pricing-desc font-Nunito text-TextColor2-0 transition-all duration-500 mb-[25.5px]">
                     Multifunctional human capital after awesome{" "}
                     <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                     superior scenarios my coordinate

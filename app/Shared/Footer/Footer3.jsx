@@ -134,7 +134,7 @@ const Footer3 = () => {
             <h4 className="font-Rajdhani text-[28px] text-white font-semibold mb-[30px]">
               Newsletter
             </h4>
-            <p className="font-Nunito text-white opacity-80 font-medium mb-[26px]">
+            <p className="font-Nunito text-white opacity-80 font-medium mb-[25.5px]">
               Subscribe Our Latest Newsletter
             </p>
             <form action="#" method="post">

@@ -1,0 +1,13 @@
+.our-trip {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.our-trip::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.our-trip-box {
+    width: 310px;
+    height: 550px;
+}
